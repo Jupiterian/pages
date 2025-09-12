@@ -17,7 +17,7 @@ permalink: /snake
         display: none;
         border-style: solid;
         border-width: 10px;
-        border-color: #FFFFFF;
+        border-color: #6c9bd0;
         background-color: #72d38d; /* Added background color */
     }
     canvas:focus{
