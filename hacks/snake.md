@@ -18,6 +18,7 @@ permalink: /snake
         border-style: solid;
         border-width: 10px;
         border-color: #FFFFFF;
+        background-color: #72d38d; /* Added background color */
     }
     canvas:focus{
         outline: none;
@@ -266,7 +267,7 @@ permalink: /snake
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "royalblue";
+            ctx.fillStyle = "#72d38d"; // Changed background color
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
