@@ -11,9 +11,11 @@ const cookie = {
   addCookies(amount) {
     this.cookies += amount;
     this.updateDisplay();
+    // @ts-ignore
     localStorage.setItem("cookies", this.cookies);
   },
   updateDisplay() {
+    // @ts-ignore
     cookieCountDisplay.innerHTML = this.cookies;
   },
   fetchStoredCookies() {
@@ -30,10 +32,12 @@ const shop = {
   tab: "shop",
   forSale: [],
   updateShopDisplay() {
+    // @ts-ignore
     shopContainer.innerHTML = "";
     const shopTitle = document.createElement("div");
     shopTitle.className = "text-xl font-bold mb-4 text-center";
     shopTitle.innerHTML = "SHOP";
+    // @ts-ignore
     shopContainer.appendChild(shopTitle);
     const shopSwap = document.createElement("button");
     shopSwap.className = `bg-slate-500 hover:bg-slate-600 text-white px-4 py-2 mb-2`;
@@ -43,6 +47,7 @@ const shop = {
       if (this.tab === "upgrades") shop.switchTab("shop");
       else shop.switchTab("upgrades");
     });
+    // @ts-ignore
     shopContainer.appendChild(shopSwap);
     if (this.tab === "upgrades")
       for (let i = 0; i < this.forSale.length; i++) {
@@ -51,6 +56,7 @@ const shop = {
         const shopButton = document.createElement("button");
         shopButton.className = `bg-slate-500 hover:bg-slate-600 text-white px-4 py-2 mb-2`;
         shopButton.innerHTML = `${forSaleItemInfo.emoji} ${forSaleItemInfo.name} (${forSaleItemInfo.price} 🍪)`;
+        // @ts-ignore
         shopContainer.appendChild(shopButton);
 
         shopButton.addEventListener("click", () => {
@@ -467,6 +473,7 @@ const x2Click = {
   itemEffected: "click",
   multiplier: 2,
 };
+// @ts-ignore
 shop.upgrades.push(x2Click);
 
 const x5Click = {
@@ -476,6 +483,7 @@ const x5Click = {
   itemEffected: "click",
   multiplier: 5,
 };
+// @ts-ignore
 shop.upgrades.push(x5Click);
 
 shop.addItemForSale(grandma);
