@@ -1,17 +1,17 @@
 # Ishan Jha Personal Issue -- Level 5 Mansion Game
 
 ## Summary of Personal Contributions
-As a scrum master I delegated work to everybody and ensured team cooperation. I also led most ideation and developing strategies. Personally, as the **Product Owner**, I was the one who created the environment for everybody to work out of it, as well as counseling other levels and assisting them if they had any questions.
+As a **Scrum Master** I delegated work to everybody and ensured team cooperation. I also led most ideation and development strategies. As the **Product Owner**, I created the environment for everybody to work within and assisted other levels if they had any questions.
 
 ## Evidence of Work
 
-<img src="https://github.com/user-attachments/assets/e5979200-892d-4ef4-94fa-fd8689da8f9e">
+<img src="https://github.com/user-attachments/assets/e5979200-892d-4ef4-94fa-fd8689da8f9e" alt="Commit timeline showing my Level 5 contribution commits">
 
 I had 8 commits for our level during this time.
 
 I also set up the original game structure by moving mansionGame to _projects as you can see here through these 2 commits.
 
-<img src="https://github.com/user-attachments/assets/f25869ae-67e1-47cb-b42d-c84c2181b5f2">
+<img src="https://github.com/user-attachments/assets/f25869ae-67e1-47cb-b42d-c84c2181b5f2" alt="Commit evidence for moving mansionGame into _projects">
 
 ## Specific Commit Details
 Here I highlight key contributions in each commit and what I specifically worked on.
@@ -20,7 +20,7 @@ Here I highlight key contributions in each commit and what I specifically worked
 In commits 'wip' and 'game functioning now!' (commit hashes `0c4c991` and `c8bac8e`) my main goal was to set up the game environment for everybody. My key changes were:
 - Moving the old mansionGame from trimester 1 over to the `_projects` directory
   - This moved the old mansionGame files into the `_projects` folder and organized it within the new directory structure.
-- Adjusting code to rely on new asset paths so that the file would load.
+- Adjusting code to rely on new asset paths so that assets would load correctly from the new directory structure.
 
 Key files changed:
 - `_projects/.makeprojects`
@@ -34,11 +34,13 @@ Key files changed:
 - `_projects/games/mansionGame/js/mansionLevel6.js`
 - `_projects/games/mansionGame/images/*` (core game assets and level sprites)
 
-<img src="https://github.com/user-attachments/assets/cf313f15-253f-409a-8987-432246740d49">
+Note: These initial setup commits updated the `js/` structure. By the later Level 5 commits (starting at `c3e4504`), active level logic in this branch was organized under `levels/` to align with the newer game folder convention, so the file paths below reflect that updated structure.
 
-<img src="https://github.com/user-attachments/assets/c7604385-07ac-415e-9b55-077cf13edcfa">
+<img src="https://github.com/user-attachments/assets/cf313f15-253f-409a-8987-432246740d49" alt="Screenshot of file movement and setup commit details">
 
-## 'intial codex run (needs to be debugged)' and 'full wheel of fortune game'
+<img src="https://github.com/user-attachments/assets/c7604385-07ac-415e-9b55-077cf13edcfa" alt="Screenshot of updated paths and game setup changes">
+
+## 'initial codex run (needs to be debugged)' and 'full wheel of fortune game'
 In commits `c3e4504` and `1bfb2fb`, I focused on building and integrating the full Level 5 mini-game loop. My key changes were:
 - Added a new `WheelOfFortune` game manager class for the Level 5 challenge UI and gameplay flow.
 - Refactored Level 5 to use the wheel mini-game as the gating challenge.
